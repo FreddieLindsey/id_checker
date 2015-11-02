@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/api', function(req, res, next) {
-  res.send({
+router.post('/api', function(req, res, next) {
+  res.json({
     "Bob": "Hello"
   })
 })
