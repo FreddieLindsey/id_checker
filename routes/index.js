@@ -8,7 +8,9 @@ router.get('/', function(req, res, next) {
 
 router.post('/api', function(req, res, next) {
   res.json({
-    "Bob": "Hello"
+    "driving_license": req.body.dl_num,
+    "national_insurance": req.body.ni_num,
+    "postcode": req.body.postcode
   })
 })
 
